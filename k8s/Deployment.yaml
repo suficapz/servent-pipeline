@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pipeline-servent
+  labels:
+    app: pipeline-servent
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: pipeline-servent
+  template:
+    metadata:
+      labels:
+        app: pipeline-servent
+    spec:
+      containers:
+        - name: pipeline-servent
+          image: 8089278330/pipeline-servent:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
