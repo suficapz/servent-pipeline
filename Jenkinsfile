@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIALS_ID = 'docker-cred'
-        DOCKER_IMAGE          = 'pipeline-servent'
+        DOCKER_IMAGE          = 'muhammedsufiyan/pipeline-servent'
         SONAR_SERVER_NAME     = 'sonarqube-env' 
         SONAR_SCANNER_TOOL    = 'sonar-scanner'     
         GIT_CREDENTIALS_ID    = 'github-cred'
