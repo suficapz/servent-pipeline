@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: pipeline-servent
-          image: 8089278330/pipeline-servent:latest
+          image: muhammedsufiyan/pipeline-servent:3
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
