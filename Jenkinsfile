@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_CREDENTIALS_ID = 'docker-cred'
         DOCKER_IMAGE          = 'pipeline-servent'
-        SONAR_SERVER_NAME     = 'sonarqube_env' 
+        SONAR_SERVER_NAME     = 'sonarqube-env' 
         SONAR_SCANNER_TOOL    = 'sonar-scanner'     
         GIT_CREDENTIALS_ID    = 'github-cred'
         MANIFEST_REPO         = 'https://github.com/suficapz/servent-pipeline.git'
